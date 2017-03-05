@@ -389,14 +389,8 @@ public class parserSQL {
 }
 class tok {
 	/*
-	 * This is my tok object from Compilers. The interesting thing about this
-	 * object's style is that is allows for a dual name system which could be 
-	 * useful for rename statements. Effectively we could store whatever is 
-	 * after the 'AS' in the second slot. If there is no 'AS', then the original
-	 * name could be copied to the other. Obviously I have not made any changes, 
-	 * but I was considering nameSQL and nameDisplay (or some such thing). 
-	 * Open to suggestions
-	 * 
+	 * This tok object is what is stored in the array. It is an object that simply holds
+	 * a wide variety of information about each token to aid the later processes down the line.
 	 */
 	
 	Token_Type type;
